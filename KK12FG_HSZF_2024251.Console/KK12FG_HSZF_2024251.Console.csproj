@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="animal.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="animal.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KK12FG_HSZF_2024251.Application\KK12FG_HSZF_2024251.Application.csproj" />
+    <ProjectReference Include="..\KK12FG_HSZF_2024251.Model\KK12FG_HSZF_2024251.Model.csproj" />
+    <ProjectReference Include="..\KK12FG_HSZF_2024251.Persistence.MsSql\KK12FG_HSZF_2024251.Persistence.MsSql.csproj" />
+  </ItemGroup>
+
+</Project>

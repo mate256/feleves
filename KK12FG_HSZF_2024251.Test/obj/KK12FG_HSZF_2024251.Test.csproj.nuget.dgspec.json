@@ -1,0 +1,385 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Test\\KK12FG_HSZF_2024251.Test.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Application\\KK12FG_HSZF_2024251.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Application\\KK12FG_HSZF_2024251.Application.csproj",
+        "projectName": "KK12FG_HSZF_2024251.Application",
+        "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Application\\KK12FG_HSZF_2024251.Application.csproj",
+        "packagesPath": "C:\\Users\\Máté\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Máté\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj": {
+                "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj"
+              },
+              "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Persistence.MsSql\\KK12FG_HSZF_2024251.Persistence.MsSql.csproj": {
+                "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Persistence.MsSql\\KK12FG_HSZF_2024251.Persistence.MsSql.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj",
+        "projectName": "KK12FG_HSZF_2024251.Model",
+        "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj",
+        "packagesPath": "C:\\Users\\Máté\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Máté\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.csproj": {
+                "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Persistence.MsSql\\KK12FG_HSZF_2024251.Persistence.MsSql.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Persistence.MsSql\\KK12FG_HSZF_2024251.Persistence.MsSql.csproj",
+        "projectName": "KK12FG_HSZF_2024251.Persistence.MsSql",
+        "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Persistence.MsSql\\KK12FG_HSZF_2024251.Persistence.MsSql.csproj",
+        "packagesPath": "C:\\Users\\Máté\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Persistence.MsSql\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Máté\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj": {
+                "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Test\\KK12FG_HSZF_2024251.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Test\\KK12FG_HSZF_2024251.Test.csproj",
+        "projectName": "KK12FG_HSZF_2024251.Test",
+        "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Test\\KK12FG_HSZF_2024251.Test.csproj",
+        "packagesPath": "C:\\Users\\Máté\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Máté\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Application\\KK12FG_HSZF_2024251.Application.csproj": {
+                "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Application\\KK12FG_HSZF_2024251.Application.csproj"
+              },
+              "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj": {
+                "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj"
+              },
+              "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Persistence.MsSql\\KK12FG_HSZF_2024251.Persistence.MsSql.csproj": {
+                "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Persistence.MsSql\\KK12FG_HSZF_2024251.Persistence.MsSql.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.6.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.6.1, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.2.1, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.csproj",
+        "projectName": "KK12FG_HSZF_2024251",
+        "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.csproj",
+        "packagesPath": "C:\\Users\\Máté\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Máté\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

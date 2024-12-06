@@ -1,0 +1,294 @@
+﻿{
+  "animal": [
+    {
+      "Name": "spotted",
+      "Gender": "male",
+      "Species": "dog",
+      "Age": "6",
+      "activity": [
+        {
+          "Date": "2024.06.23.",
+          "Type": "barking",
+          "Description": "very loud"
+        },
+        {
+          "Date": "2024.06.23.",
+          "Type": "running",
+          "Description": "so fast"
+        }
+      ],
+      "food": [
+        {
+          "Name": "dog_food",
+          "Quantity": "50"
+        }
+      ]
+    },
+    {
+      "Name": "snowflake",
+      "Gender": "female",
+      "Species": "cat",
+      "Age": "3",
+      "activity": [
+        {
+          "Date": "2023.11.20.",
+          "Type": "climbing",
+          "Description": "very high"
+        }
+      ],
+      "food": [
+        {
+          "Name": "cat_food",
+          "Quantity": "37"
+        }
+      ]
+    },
+    {
+      "Name": "Sir Squeak-a-Lot",
+      "Gender": "male",
+      "Species": "hamster",
+      "Age": "1",
+      "activity": [
+        {
+          "Date": "2024.01.23.",
+          "Type": "running",
+          "Description": "so fast"
+        }
+      ],
+      "food": [
+        {
+          "Name": "hamster_food",
+          "Quantity": "9"
+        }
+      ]
+    },
+    {
+      "Name": "bird",
+      "Gender": "female",
+      "Species": "parrot",
+      "Age": "1",
+      "activity": [
+        {
+          "Date": "2024.06.23.",
+          "Type": "singing",
+          "Description": "very loud"
+        }
+      ],
+      "food": [
+        {
+          "Name": "parrot_food",
+          "Quantity": "17"
+        }
+      ]
+    },
+    {
+      "Name": "fish",
+      "Gender": "female",
+      "Species": "fish",
+      "Age": "1",
+      "activity": [
+        {
+          "Date": "2024.06.10.",
+          "Type": "swimming",
+          "Description": "slowly"
+        }
+      ],
+      "food": [
+        {
+          "Name": "fish_food",
+          "Quantity": "14"
+        }
+      ]
+    },
+    {
+      "Name": "Whiskers",
+      "Gender": "male",
+      "Species": "rabbit",
+      "Age": "2",
+      "activity": [
+        {
+          "Date": "2024.05.17.",
+          "Type": "hopping",
+          "Description": "playful"
+        }
+      ],
+      "food": [
+        {
+          "Name": "carrot",
+          "Quantity": "8"
+        }
+      ]
+    },
+    {
+      "Name": "Fluffy",
+      "Gender": "female",
+      "Species": "guinea pig",
+      "Age": "3",
+      "activity": [
+        {
+          "Date": "2024.04.11.",
+          "Type": "exploring",
+          "Description": "curious"
+        }
+      ],
+      "food": [
+        {
+          "Name": "vegetables",
+          "Quantity": "6"
+        }
+      ]
+    },
+    {
+      "Name": "Scales",
+      "Gender": "male",
+      "Species": "gecko",
+      "Age": "4",
+      "activity": [
+        {
+          "Date": "2024.02.27.",
+          "Type": "climbing",
+          "Description": "stealthy"
+        }
+      ],
+      "food": [
+        {
+          "Name": "insects",
+          "Quantity": "20"
+        }
+      ]
+    },
+    {
+      "Name": "Wiggles",
+      "Gender": "female",
+      "Species": "snake",
+      "Age": "2",
+      "activity": [
+        {
+          "Date": "2024.06.01.",
+          "Type": "slithering",
+          "Description": "graceful"
+        }
+      ],
+      "food": [
+        {
+          "Name": "rodents",
+          "Quantity": "5"
+        }
+      ]
+    },
+    {
+      "Name": "Paws",
+      "Gender": "male",
+      "Species": "ferret",
+      "Age": "3",
+      "activity": [
+        {
+          "Date": "2024.07.12.",
+          "Type": "digging",
+          "Description": "energetic"
+        }
+      ],
+      "food": [
+        {
+          "Name": "meat",
+          "Quantity": "15"
+        }
+      ]
+    },
+    {
+      "Name": "Chirpy",
+      "Gender": "female",
+      "Species": "canary",
+      "Age": "1",
+      "activity": [
+        {
+          "Date": "2024.03.21.",
+          "Type": "singing",
+          "Description": "melodious"
+        }
+      ],
+      "food": [
+        {
+          "Name": "seeds",
+          "Quantity": "12"
+        }
+      ]
+    },
+    {
+      "Name": "Hopper",
+      "Gender": "male",
+      "Species": "frog",
+      "Age": "2",
+      "activity": [
+        {
+          "Date": "2024.09.08.",
+          "Type": "jumping",
+          "Description": "quick"
+        }
+      ],
+      "food": [
+        {
+          "Name": "flies",
+          "Quantity": "22"
+        }
+      ]
+    },
+    {
+      "Name": "Flapper",
+      "Gender": "female",
+      "Species": "bat",
+      "Age": "3",
+      "activity": [
+        {
+          "Date": "2024.10.15.",
+          "Type": "flying",
+          "Description": "nocturnal"
+        }
+      ],
+      "food": [
+        {
+          "Name": "fruit",
+          "Quantity": "18"
+        }
+      ]
+    },
+    {
+      "Name": "Spike",
+      "Gender": "male",
+      "Species": "hedgehog",
+      "Age": "4",
+      "activity": [
+        {
+          "Date": "2024.11.05.",
+          "Type": "foraging",
+          "Description": "diligent"
+        }
+      ],
+      "food": [
+        {
+          "Name": "worms",
+          "Quantity": "10"
+        }
+      ]
+    },
+    {
+      "Name": "Speedy",
+      "Gender": "female",
+      "Species": "tortoise",
+      "Age": "50",
+      "activity": [
+        {
+          "Date": "2024.12.02.",
+          "Type": "walking",
+          "Description": "steady"
+        }
+      ],
+      "food": [
+        {
+          "Name": "lettuce",
+          "Quantity": "25"
+        }
+      ]
+    }
+  ]
+}
