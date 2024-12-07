@@ -9,6 +9,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Channels;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 #region IoC Container
 //IoC container
@@ -248,7 +250,8 @@ static void ShowDetails(Animal animal)
         }
     }
 }
-void AddAnimal(/**/)
+
+void AddAnimal()
 {
     Console.WriteLine("Enter animal name:");
     string name = Console.ReadLine();
@@ -257,7 +260,7 @@ void AddAnimal(/**/)
     Console.WriteLine("Enter animal species:");
     string species = Console.ReadLine();
     Console.WriteLine("Enter animal age:");
-    string ageString =  Console.ReadLine();
+    string ageString = Console.ReadLine();
     int age;
     while (!int.TryParse(ageString, out age))
     {
@@ -265,9 +268,12 @@ void AddAnimal(/**/)
         Console.WriteLine("Enter animal age:");
         ageString = Console.ReadLine();
     }
-   
-    
-    animalService.AddAnimal(new Animal(name, gender, species, age));
+
+
+    string animalID = animalService.AddAnimal(new Animal(name, gender, species, age));
+
+    AddActivity(animalID);
+
     Console.WriteLine("For return press any key");
 
     ConsoleKey key = Console.ReadKey(intercept: true).Key;
@@ -275,4 +281,17 @@ void AddAnimal(/**/)
     FoMenuKiir();
     MenuSwitch(animalService);
 
+}
+
+void AddActivity(string animalId)
+{
+    Console.WriteLine("Enter Date:");
+    DateTime date = DateTime.Parse(Console.ReadLine());
+    Console.WriteLine("Enter Type:");
+    string type = Console.ReadLine();
+    Console.WriteLine("Enter Description:");
+    string description = Console.ReadLine();
+
+    activityService.AddActivity(new Activity(date, type, description, animalId));
+    
 }

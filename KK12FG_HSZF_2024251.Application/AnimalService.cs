@@ -8,7 +8,7 @@ namespace KK12FG_HSZF_2024251.Application
     public interface IAnimalService
     {
         IEnumerable<Animal> GetAnimals();
-        void AddAnimal(Animal animal);
+        string AddAnimal(Animal animal);
         void UpdateAnimal(Animal animal);
         void RemoveAnimal(Animal animal);
         void AddMultipleAnimal(IEnumerable<Animal> animals);
@@ -21,13 +21,14 @@ namespace KK12FG_HSZF_2024251.Application
             this.animalDataProvider = animalDataProvider;
         }
 
-        public void AddAnimal(Animal newAnimal)
+        public string AddAnimal(Animal newAnimal)
         {
             var animal = animalDataProvider.GetAnimals().FirstOrDefault(t => t.Name == newAnimal.Name);
             if (animal == null)
             {
-                animalDataProvider.AddAnimal(newAnimal);
+                animal = animalDataProvider.AddAnimal(newAnimal);
             }
+            return animal.AnimalId;
         }
 
         public void AddMultipleAnimal(IEnumerable<Animal> animals)
