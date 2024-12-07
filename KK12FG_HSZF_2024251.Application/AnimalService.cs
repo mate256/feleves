@@ -1,4 +1,6 @@
-﻿using KK12FG_HSZF_2024251.Model;
+﻿using System.Collections.Generic;
+using System.Linq;
+using KK12FG_HSZF_2024251.Model;
 using KK12FG_HSZF_2024251.Persistence.MsSql;
 
 namespace KK12FG_HSZF_2024251.Application
