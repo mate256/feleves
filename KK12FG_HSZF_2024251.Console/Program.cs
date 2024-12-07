@@ -49,47 +49,55 @@ else
     json.AddDataFromJson();
 */
 
-
-for (int i = 0; i < 6; i++) Console.Write("---");
-Console.WriteLine();
-Console.WriteLine("Válassz műveletet: ");
-Console.WriteLine("1. Listázás");
-Console.ForegroundColor = ConsoleColor.Green;
-Console.WriteLine("2. létrehozás");
-Console.ForegroundColor = ConsoleColor.Blue;
-Console.WriteLine("3. Frissítés");
-Console.ForegroundColor = ConsoleColor.Red;
-Console.WriteLine("4. Törlés");
-Console.ResetColor();
-for (int i = 0; i < 6; i++) Console.Write("---");
-Console.WriteLine();
-Console.Write("Művelet: ");
-ConsoleKey key = Console.ReadKey(intercept: true).Key;
-Console.WriteLine();
-for (int i = 0; i < 6; i++) Console.Write("---");
-Console.WriteLine();
-
-
-
-switch (key)
+void FoMenuKiir()
 {
-
-    case ConsoleKey.D1:
-        Kiir(animalService.GetAnimals());
-        break;
-    case ConsoleKey.D2:
-        AddAnimal();
-        break;
-    case ConsoleKey.D3:
-        break;
-    case ConsoleKey.D4:
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("Melyiket szertnéd törölni?");
-        Console.ResetColor();
-        break;
-    default:
-        break;
+    for (int i = 0; i < 6; i++) Console.Write("---");
+    Console.WriteLine();
+    Console.WriteLine("Válassz műveletet: ");
+    Console.WriteLine("1. Listázás");
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("2. létrehozás");
+    Console.ForegroundColor = ConsoleColor.Blue;
+    Console.WriteLine("3. Frissítés");
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine("4. Törlés");
+    Console.ResetColor();
+    for (int i = 0; i < 6; i++) Console.Write("---");
+    Console.WriteLine();
+    Console.Write("Művelet: ");
+    Console.WriteLine();
+    for (int i = 0; i < 6; i++) Console.Write("---");
+    Console.WriteLine();
 }
+
+FoMenuKiir();
+
+
+void MenuSwitch(IAnimalService animalService)
+{
+    ConsoleKey key = Console.ReadKey(intercept: true).Key;
+
+    switch (key)
+    {
+
+        case ConsoleKey.D1:
+            Kiir(animalService.GetAnimals());
+            break;
+        case ConsoleKey.D2:
+            AddAnimal();
+            break;
+        case ConsoleKey.D3:
+            break;
+        case ConsoleKey.D4:
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Melyiket szertnéd törölni?");
+            Console.ResetColor();
+            break;
+        default:
+            break;
+    }
+}
+MenuSwitch(animalService);
 
 Console.ReadLine();
 static void Kiir(IEnumerable<Animal> animals)
@@ -240,7 +248,31 @@ static void ShowDetails(Animal animal)
         }
     }
 }
-static void AddAnimal(/**/)
+void AddAnimal(/**/)
 {
+    Console.WriteLine("Enter animal name:");
+    string name = Console.ReadLine();
+    Console.WriteLine("Enter animal gender:");
+    string gender = Console.ReadLine();
+    Console.WriteLine("Enter animal species:");
+    string species = Console.ReadLine();
+    Console.WriteLine("Enter animal age:");
+    string ageString =  Console.ReadLine();
+    int age;
+    while (!int.TryParse(ageString, out age))
+    {
+        Console.WriteLine("Age has to be a digit!");
+        Console.WriteLine("Enter animal age:");
+        ageString = Console.ReadLine();
+    }
+   
+    
+    animalService.AddAnimal(new Animal(name, gender, species, age));
+    Console.WriteLine("For return press any key");
+
+    ConsoleKey key = Console.ReadKey(intercept: true).Key;
+    Console.Clear();
+    FoMenuKiir();
+    MenuSwitch(animalService);
 
 }
