@@ -274,6 +274,7 @@ void AddAnimal()
 
     AddActivity(animalID);
 
+
     Console.WriteLine("For return press any key");
 
     ConsoleKey key = Console.ReadKey(intercept: true).Key;
@@ -292,6 +293,20 @@ void AddActivity(string animalId)
     Console.WriteLine("Enter Description:");
     string description = Console.ReadLine();
 
+    int descriptionint;
+    while (!int.TryParse(description, out descriptionint))
+    {
+        Console.WriteLine("description has to be a digit!");
+        Console.WriteLine("Enter Description:");
+        description = Console.ReadLine();
+    }
+    //foodService.UpdateFood();
+    
+    if (type == "feeding")
+    {
+        int.Parse(description);
+    }
     activityService.AddActivity(new Activity(date, type, description, animalId));
+
     
 }
