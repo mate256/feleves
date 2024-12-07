@@ -1,20 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Console\\KK12FG_HSZF_2024251.Console.csproj": {}
+    "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Console\\KK12FG_HSZF_2024251.Console.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Application\\KK12FG_HSZF_2024251.Application.csproj": {
+    "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Application\\KK12FG_HSZF_2024251.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Application\\KK12FG_HSZF_2024251.Application.csproj",
+        "projectUniqueName": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Application\\KK12FG_HSZF_2024251.Application.csproj",
         "projectName": "KK12FG_HSZF_2024251.Application",
-        "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Application\\KK12FG_HSZF_2024251.Application.csproj",
-        "packagesPath": "C:\\Users\\Máté\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Application\\obj\\",
+        "projectPath": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Application\\KK12FG_HSZF_2024251.Application.csproj",
+        "packagesPath": "C:\\Users\\kovac\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Máté\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kovac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,17 +27,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj": {
-                "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj"
+              "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj": {
+                "projectPath": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj"
               },
-              "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Persistence.MsSql\\KK12FG_HSZF_2024251.Persistence.MsSql.csproj": {
-                "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Persistence.MsSql\\KK12FG_HSZF_2024251.Persistence.MsSql.csproj"
+              "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Persistence.MsSql\\KK12FG_HSZF_2024251.Persistence.MsSql.csproj": {
+                "projectPath": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Persistence.MsSql\\KK12FG_HSZF_2024251.Persistence.MsSql.csproj"
               }
             }
           }
@@ -67,21 +73,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Console\\KK12FG_HSZF_2024251.Console.csproj": {
+    "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Console\\KK12FG_HSZF_2024251.Console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Console\\KK12FG_HSZF_2024251.Console.csproj",
+        "projectUniqueName": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Console\\KK12FG_HSZF_2024251.Console.csproj",
         "projectName": "KK12FG_HSZF_2024251.Console",
-        "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Console\\KK12FG_HSZF_2024251.Console.csproj",
-        "packagesPath": "C:\\Users\\Máté\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Console\\obj\\",
+        "projectPath": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Console\\KK12FG_HSZF_2024251.Console.csproj",
+        "packagesPath": "C:\\Users\\kovac\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Console\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Máté\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kovac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,20 +100,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Application\\KK12FG_HSZF_2024251.Application.csproj": {
-                "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Application\\KK12FG_HSZF_2024251.Application.csproj"
+              "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Application\\KK12FG_HSZF_2024251.Application.csproj": {
+                "projectPath": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Application\\KK12FG_HSZF_2024251.Application.csproj"
               },
-              "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj": {
-                "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj"
+              "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj": {
+                "projectPath": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj"
               },
-              "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Persistence.MsSql\\KK12FG_HSZF_2024251.Persistence.MsSql.csproj": {
-                "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Persistence.MsSql\\KK12FG_HSZF_2024251.Persistence.MsSql.csproj"
+              "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Persistence.MsSql\\KK12FG_HSZF_2024251.Persistence.MsSql.csproj": {
+                "projectPath": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Persistence.MsSql\\KK12FG_HSZF_2024251.Persistence.MsSql.csproj"
               }
             }
           }
@@ -143,21 +155,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj": {
+    "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj",
+        "projectUniqueName": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj",
         "projectName": "KK12FG_HSZF_2024251.Model",
-        "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj",
-        "packagesPath": "C:\\Users\\Máté\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Model\\obj\\",
+        "projectPath": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj",
+        "packagesPath": "C:\\Users\\kovac\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Model\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Máté\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kovac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -165,14 +182,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.csproj": {
-                "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.csproj"
+              "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.csproj": {
+                "projectPath": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.csproj"
               }
             }
           }
@@ -213,21 +231,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Persistence.MsSql\\KK12FG_HSZF_2024251.Persistence.MsSql.csproj": {
+    "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Persistence.MsSql\\KK12FG_HSZF_2024251.Persistence.MsSql.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Persistence.MsSql\\KK12FG_HSZF_2024251.Persistence.MsSql.csproj",
+        "projectUniqueName": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Persistence.MsSql\\KK12FG_HSZF_2024251.Persistence.MsSql.csproj",
         "projectName": "KK12FG_HSZF_2024251.Persistence.MsSql",
-        "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Persistence.MsSql\\KK12FG_HSZF_2024251.Persistence.MsSql.csproj",
-        "packagesPath": "C:\\Users\\Máté\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Persistence.MsSql\\obj\\",
+        "projectPath": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Persistence.MsSql\\KK12FG_HSZF_2024251.Persistence.MsSql.csproj",
+        "packagesPath": "C:\\Users\\kovac\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Persistence.MsSql\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Máté\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kovac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -235,14 +258,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj": {
-                "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj"
+              "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj": {
+                "projectPath": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj"
               }
             }
           }
@@ -291,21 +315,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.csproj": {
+    "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.csproj",
+        "projectUniqueName": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.csproj",
         "projectName": "KK12FG_HSZF_2024251",
-        "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.csproj",
-        "packagesPath": "C:\\Users\\Máté\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251\\obj\\",
+        "projectPath": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.csproj",
+        "packagesPath": "C:\\Users\\kovac\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Máté\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kovac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -313,6 +342,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -357,7 +387,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

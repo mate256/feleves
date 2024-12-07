@@ -5944,19 +5944,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Máté\\.nuget\\packages\\": {}
+    "C:\\Users\\kovac\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Console\\KK12FG_HSZF_2024251.Console.csproj",
+      "projectUniqueName": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Console\\KK12FG_HSZF_2024251.Console.csproj",
       "projectName": "KK12FG_HSZF_2024251.Console",
-      "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Console\\KK12FG_HSZF_2024251.Console.csproj",
-      "packagesPath": "C:\\Users\\Máté\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Console\\obj\\",
+      "projectPath": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Console\\KK12FG_HSZF_2024251.Console.csproj",
+      "packagesPath": "C:\\Users\\kovac\\.nuget\\packages\\",
+      "outputPath": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Console\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Máté\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kovac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5964,20 +5971,21 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Application\\KK12FG_HSZF_2024251.Application.csproj": {
-              "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Application\\KK12FG_HSZF_2024251.Application.csproj"
+            "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Application\\KK12FG_HSZF_2024251.Application.csproj": {
+              "projectPath": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Application\\KK12FG_HSZF_2024251.Application.csproj"
             },
-            "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj": {
-              "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj"
+            "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj": {
+              "projectPath": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Model\\KK12FG_HSZF_2024251.Model.csproj"
             },
-            "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Persistence.MsSql\\KK12FG_HSZF_2024251.Persistence.MsSql.csproj": {
-              "projectPath": "C:\\Users\\Máté\\Documents\\Egyetem\\KK12FG_HSZF_2024251\\KK12FG_HSZF_2024251.Persistence.MsSql\\KK12FG_HSZF_2024251.Persistence.MsSql.csproj"
+            "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Persistence.MsSql\\KK12FG_HSZF_2024251.Persistence.MsSql.csproj": {
+              "projectPath": "C:\\dev\\repositories\\feleves\\KK12FG_HSZF_2024251.Persistence.MsSql\\KK12FG_HSZF_2024251.Persistence.MsSql.csproj"
             }
           }
         }
@@ -6018,7 +6026,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
