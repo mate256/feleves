@@ -78,25 +78,32 @@ FoMenuKiir();
 void MenuSwitch(IAnimalService animalService)
 {
     ConsoleKey key = Console.ReadKey(intercept: true).Key;
-
-    switch (key)
+    bool exit = false;
+    while (!exit)
     {
-
-        case ConsoleKey.D1:
-            Kiir(animalService.GetAnimals(), false, false);
-            break;
-        case ConsoleKey.D2:
-            AddAnimal(null, false);
-            break;
-        case ConsoleKey.D3:
-            UpdateAnimal();
-            break;
-        case ConsoleKey.D4:
-            Kiir(animalService.GetAnimals(), false, true);
-            break;
-        default:
-            break;
+        switch (key)
+        {
+            case ConsoleKey.D1:
+                Kiir(animalService.GetAnimals(), false, false);
+                break;
+            case ConsoleKey.D2:
+                AddAnimal(null, false);
+                break;
+            case ConsoleKey.D3:
+                UpdateAnimal();
+                break;
+            case ConsoleKey.D4:
+                Kiir(animalService.GetAnimals(), false, true);
+                break;
+            case ConsoleKey.Q:
+                exit = !exit;
+                break;
+            default:
+                break;
+        }
+        break;
     }
+
 }
 MenuSwitch(animalService);
 
@@ -138,6 +145,7 @@ void Kiir(IEnumerable<Animal> animals, bool isUpdate, bool isRemove)
         {
             animalService.RemoveAnimal(items[(int)key-48]);
             MenuSwitch(animalService);
+            break;
         }
         switch (key)
         {
@@ -201,6 +209,7 @@ void Kiir(IEnumerable<Animal> animals, bool isUpdate, bool isRemove)
             default:
                 break;
         }
+        //break;
     }
     Console.WriteLine("kileptel");
 
