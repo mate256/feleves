@@ -13,7 +13,7 @@ namespace KK12FG_HSZF_2024251.Application
         IEnumerable<Activity> GetActivity();
         void AddActivity(Activity activity);
         void UpdateActivity(Activity activity, int Id);
-        void RemoveActivity(Activity activity);
+        void RemoveActivity(string AnimalID);
 
         void AddMultipleActivity(IEnumerable<Activity> activities);
     }
@@ -48,7 +48,7 @@ namespace KK12FG_HSZF_2024251.Application
             return activityDataProvider.GetActivity();
         }
 
-        public void RemoveActivity(Activity activity)
+        public void RemoveActivity(string AnimalID)
         {
             throw new NotImplementedException();
         }

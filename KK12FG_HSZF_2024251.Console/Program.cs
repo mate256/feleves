@@ -83,7 +83,7 @@ void MenuSwitch(IAnimalService animalService)
     {
 
         case ConsoleKey.D1:
-            Kiir(animalService.GetAnimals(), false);
+            Kiir(animalService.GetAnimals(), false, false);
             break;
         case ConsoleKey.D2:
             AddAnimal(null, false);
@@ -92,9 +92,7 @@ void MenuSwitch(IAnimalService animalService)
             UpdateAnimal();
             break;
         case ConsoleKey.D4:
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("Melyiket szertnéd törölni?");
-            Console.ResetColor();
+            Kiir(animalService.GetAnimals(), false, true);
             break;
         default:
             break;
@@ -104,14 +102,14 @@ MenuSwitch(animalService);
 
 void UpdateAnimal()
 {
-    Kiir(animalService.GetAnimals(), true);
+    Kiir(animalService.GetAnimals(), true, false);
    
 
 
 }
 
 // Console.ReadLine();
-void Kiir(IEnumerable<Animal> animals, bool isUpdate)
+void Kiir(IEnumerable<Animal> animals, bool isUpdate, bool isRemove)
 {
     var items = animals.ToList();
     bool exit = false;
@@ -136,6 +134,11 @@ void Kiir(IEnumerable<Animal> animals, bool isUpdate)
         Console.ResetColor();
 
         var key = Console.ReadKey(intercept: true).Key;
+        if (isRemove && (int)key >= 47 && (int)key < 58)
+        {
+            animalService.RemoveAnimal(items[(int)key-48]);
+            MenuSwitch(animalService);
+        }
         switch (key)
         {
             case ConsoleKey.LeftArrow:
@@ -192,7 +195,7 @@ void Kiir(IEnumerable<Animal> animals, bool isUpdate)
                 if (pageSize + 9 < items.Count())
                     ShowDetails(items[pageSize + 9], isUpdate);
                 break;
-            case ConsoleKey.Escape:
+            case ConsoleKey.Q:
                 exit = !exit;
                 break;
             default:
@@ -320,7 +323,7 @@ void AddActivity(Animal animal)
         Console.WriteLine("Enter Description:");
         description = Console.ReadLine();
     }
-    //foodService.UpdateFood();
+    //foodService.UpdateFood(animalId ,int.Parse(description));
     
     if (type == "feeding")
     {
@@ -338,6 +341,6 @@ void AddActivity(Animal animal)
         
     }
     activityService.AddActivity(new Activity(date, type, description, animal.AnimalId));
-   
 
+    
 }

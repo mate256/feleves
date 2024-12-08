@@ -12,7 +12,7 @@ namespace KK12FG_HSZF_2024251.Application
     {
         IEnumerable<Food> GetFoods();
         void AddFood(Food Food,int quantity);
-        void UpdateFood(Food Food);
+        void UpdateFood(string animalId, int quantity);
         void RemoveFood(Food Food);
         void AddMultipleFood(IEnumerable<Food> foods);
     }
@@ -56,8 +56,9 @@ namespace KK12FG_HSZF_2024251.Application
             throw new NotImplementedException();
         }
 
-        public void UpdateFood(Food Food)
+        public void UpdateFood(string animalId, int quantity)
         {
+            //animalId = quantity;
         }
     }
 }
