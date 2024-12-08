@@ -12,7 +12,7 @@ namespace KK12FG_HSZF_2024251.Persistence.MsSql
     public interface IAnimalDataProvider
     {
         public IEnumerable<Animal> GetAnimals();
-        public void AddAnimal(Animal animal);
+        public Animal AddAnimal(Animal animal);
         public void UpdateAnimal(Animal animal);
         public void RemoveAnimal(Animal animal);
     }
@@ -25,10 +25,11 @@ namespace KK12FG_HSZF_2024251.Persistence.MsSql
             ctx = context;
         }
 
-        public void AddAnimal(Animal animal)
+        public Animal AddAnimal(Animal animal)
         {
             ctx.Animals.Add(animal);
             ctx.SaveChanges();
+            return animal;
         }
 
         public IEnumerable<Animal> GetAnimals()
