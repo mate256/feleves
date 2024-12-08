@@ -83,12 +83,13 @@ void MenuSwitch(IAnimalService animalService)
     {
 
         case ConsoleKey.D1:
-            Kiir(animalService.GetAnimals());
+            Kiir(animalService.GetAnimals(), false);
             break;
         case ConsoleKey.D2:
-            AddAnimal();
+            AddAnimal(null, false);
             break;
         case ConsoleKey.D3:
+            UpdateAnimal();
             break;
         case ConsoleKey.D4:
             Console.ForegroundColor = ConsoleColor.Red;
@@ -101,8 +102,16 @@ void MenuSwitch(IAnimalService animalService)
 }
 MenuSwitch(animalService);
 
-Console.ReadLine();
-static void Kiir(IEnumerable<Animal> animals)
+void UpdateAnimal()
+{
+    Kiir(animalService.GetAnimals(), true);
+   
+
+
+}
+
+// Console.ReadLine();
+void Kiir(IEnumerable<Animal> animals, bool isUpdate)
 {
     var items = animals.ToList();
     bool exit = false;
@@ -145,43 +154,43 @@ static void Kiir(IEnumerable<Animal> animals)
                 break;
             case ConsoleKey.D0:
                 if (pageSize < items.Count())
-                    ShowDetails(items[pageSize]);
+                    ShowDetails(items[pageSize], isUpdate);
                 break;
             case ConsoleKey.D1:
                 if (pageSize + 1 < items.Count())
-                    ShowDetails(items[pageSize + 1]);
+                    ShowDetails(items[pageSize + 1], isUpdate);
                 break;
             case ConsoleKey.D2:
                 if (pageSize + 2 < items.Count())
-                    ShowDetails(items[pageSize + 2]);
+                    ShowDetails(items[pageSize + 2], isUpdate);
                 break;
             case ConsoleKey.D3:
                 if (pageSize + 3 < items.Count())
-                    ShowDetails(items[pageSize + 3]);
+                    ShowDetails(items[pageSize + 3], isUpdate);
                 break;
             case ConsoleKey.D4:
                 if (pageSize + 4 < items.Count())
-                    ShowDetails(items[pageSize + 4]);
+                    ShowDetails(items[pageSize + 4], isUpdate);
                 break;
             case ConsoleKey.D5:
                 if (pageSize + 5 < items.Count())
-                    ShowDetails(items[pageSize + 5]);
+                    ShowDetails(items[pageSize + 5], isUpdate);
                 break;
             case ConsoleKey.D6:
                 if (pageSize + 6 < items.Count())
-                    ShowDetails(items[pageSize + 6]);
+                    ShowDetails(items[pageSize + 6], isUpdate);
                 break;
             case ConsoleKey.D7:
                 if (pageSize + 7 < items.Count())
-                    ShowDetails(items[pageSize + 7]);
+                    ShowDetails(items[pageSize + 7], isUpdate);
                 break;
             case ConsoleKey.D8:
                 if (pageSize + 8 < items.Count())
-                    ShowDetails(items[pageSize + 8]);
+                    ShowDetails(items[pageSize + 8], isUpdate);
                 break;
             case ConsoleKey.D9:
                 if (pageSize + 9 < items.Count())
-                    ShowDetails(items[pageSize + 9]);
+                    ShowDetails(items[pageSize + 9], isUpdate);
                 break;
             case ConsoleKey.Escape:
                 exit = !exit;
@@ -195,7 +204,7 @@ static void Kiir(IEnumerable<Animal> animals)
 
 }
 
-static void ShowDetails(Animal animal)
+void ShowDetails(Animal animal, bool isUpdate)
 {
     bool exit = false;
     int pageSize = 0;
@@ -224,34 +233,28 @@ static void ShowDetails(Animal animal)
         {
             Console.WriteLine(food.Name);
         }
-
+        
+        Console.WriteLine("Press U key to update existing animal, empty string will keep original data.");
+        Console.WriteLine("Press Q to go back");
         var key = Console.ReadKey(intercept: true).Key;
-        switch (key)
+        if (key == ConsoleKey.Q)
         {
-            case ConsoleKey.LeftArrow:
-                if (pageSize - 10 >= 0)
-                {
-                    pageSize -= 10;
-                    currentPage--;
-                }
-                break;
-            case ConsoleKey.RightArrow:
-                if (pageSize + 10 < animal.Activities.Count() + animal.Activities.Count() % 10)
-                {
-                    pageSize += 10;
-                    currentPage++;
-                }
-                break;
-            case ConsoleKey.Escape:
-                exit = !exit;
-                break;
-            default:
-                break;
+            exit = !exit;
+
         }
+        if (key == ConsoleKey.U)
+        {
+            AddAnimal(animal, true);
+
+        }
+        
+
+       
+        
     }
 }
 
-void AddAnimal()
+void AddAnimal(Animal animal, bool isUpdate)
 {
     Console.WriteLine("Enter animal name:");
     string name = Console.ReadLine();
@@ -269,10 +272,25 @@ void AddAnimal()
         ageString = Console.ReadLine();
     }
 
+    if (animal == null)
+    {
+        animal = animalService.AddAnimal(new Animal(name, gender, species, age));
 
-    Animal animal = animalService.AddAnimal(new Animal(name, gender, species, age));
+    }
+    else
+    {
+        animal.Name = name == "" ? animal.Name : name;
+        animal.Gender = gender == "" ? animal.Gender : gender;
+        animal.Species = species == "" ? animal.Species : species;
+        animal.Age = ageString == "" ? animal.Age : age;
+        animalService.UpdateAnimal(animal);
+    }
 
-    AddActivity(animal);
+    if (!isUpdate)
+    {
+        AddActivity(animal);
+
+    }
 
 
     Console.WriteLine("For return press any key");
