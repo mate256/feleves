@@ -31,9 +31,9 @@ namespace KK12FG_HSZF_2024251.Model
         [JsonProperty("Quantity")]
         public int Quantity { get; set; }
         public virtual ICollection<Animal> Animals { get; set; }
-        
-        [ForeignKey("AnimalId")]
-        public string AnimalId { get; set; }
-        public virtual Animal Animal { get; set; }
+        //
+        // [ForeignKey("AnimalId")]
+        // public string AnimalId { get; set; }
+        // public virtual Animal Animal { get; set; }
     }
 }

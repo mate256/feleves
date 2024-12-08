@@ -21,14 +21,14 @@ namespace KK12FG_HSZF_2024251.Persistence.MsSql
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Animal>()
-                .HasMany(a => a.Foods)
-                .WithMany(f => f.Animals)
-                .UsingEntity<Dictionary<string, object>>(
-                    "AnimalFood", // Köztes tábla neve
-                    animal => animal.HasOne<Food>().WithMany().HasForeignKey("FoodId"),
-                    activity => activity.HasOne<Animal>().WithMany().HasForeignKey("AnimalId"));
-        
+        //     modelBuilder.Entity<Animal>()
+        //         .HasMany(a => a.Foods)
+        //         .WithMany(f => f.Animals)
+        //         .UsingEntity<Dictionary<string, object>>(
+        //             "AnimalFood", // Köztes tábla neve
+        //             animal => animal.HasOne<Food>().WithMany().HasForeignKey("FoodId"),
+        //             activity => activity.HasOne<Animal>().WithMany().HasForeignKey("AnimalId"));
+        //
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

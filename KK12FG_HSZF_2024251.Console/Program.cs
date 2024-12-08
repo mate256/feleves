@@ -270,9 +270,9 @@ void AddAnimal()
     }
 
 
-    string animalID = animalService.AddAnimal(new Animal(name, gender, species, age));
+    Animal animal = animalService.AddAnimal(new Animal(name, gender, species, age));
 
-    AddActivity(animalID);
+    AddActivity(animal);
 
 
     Console.WriteLine("For return press any key");
@@ -284,14 +284,16 @@ void AddAnimal()
 
 }
 
-void AddActivity(string animalId)
+void AddActivity(Animal animal)
 {
-    Console.WriteLine("Enter Date:");
+    Console.WriteLine("Enter Date (2024-10-15):");
     DateTime date = DateTime.Parse(Console.ReadLine());
     Console.WriteLine("Enter Type:");
     string type = Console.ReadLine();
     Console.WriteLine("Enter Description:");
     string description = Console.ReadLine();
+    Console.WriteLine("Enter Foodname:");
+    string foodName = Console.ReadLine();
 
     int descriptionint;
     while (!int.TryParse(description, out descriptionint))
@@ -304,9 +306,20 @@ void AddActivity(string animalId)
     
     if (type == "feeding")
     {
-        int.Parse(description);
-    }
-    activityService.AddActivity(new Activity(date, type, description, animalId));
+        if (animal.Foods.Any(a => a.Name == foodName))
+        {
+            Food updatedFood = animal.Foods.First(f => f.Name == foodName);
+            updatedFood.Quantity -= descriptionint;
+        }
+        else
+        {
+            animal.Foods.Add(new Food(foodName, descriptionint));
+        }
+        animalService.UpdateAnimal(animal);
 
-    
+        
+    }
+    activityService.AddActivity(new Activity(date, type, description, animal.AnimalId));
+   
+
 }
